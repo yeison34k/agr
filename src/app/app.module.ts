@@ -8,6 +8,10 @@ import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { SidebarComponent } from './chared/sidebar/sidebar.component';
 import { HeaderComponent } from './chared/header/header.component';
 import { RegisterComponent } from './auth/register/register.component';
+import { BreadcrumbsComponent } from './chared/breadcrumbs/breadcrumbs.component';
+import { Grafica1Component } from './pages/grafica1/grafica1.component';
+import { ProgressComponent } from './pages/progress/progress.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -17,12 +21,15 @@ import { RegisterComponent } from './auth/register/register.component';
     DashboardComponent,
     SidebarComponent,
     HeaderComponent,
-    RegisterComponent
+    RegisterComponent,
+    BreadcrumbsComponent,
+    Grafica1Component,
+    ProgressComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
-  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
