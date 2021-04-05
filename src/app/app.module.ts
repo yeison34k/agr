@@ -12,6 +12,7 @@ import { BreadcrumbsComponent } from './chared/breadcrumbs/breadcrumbs.component
 import { Grafica1Component } from './pages/grafica1/grafica1.component';
 import { ProgressComponent } from './pages/progress/progress.component';
 import { AppRoutingModule } from './app-routing.module';
+import { PagesComponent } from './pages/pages.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { AppRoutingModule } from './app-routing.module';
     RegisterComponent,
     BreadcrumbsComponent,
     Grafica1Component,
-    ProgressComponent
+    ProgressComponent,
+    PagesComponent
   ],
   imports: [
     BrowserModule,
