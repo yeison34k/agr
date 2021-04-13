@@ -9,7 +9,8 @@ import { MultiDataSet, Label } from 'ng2-charts';
   ]
 })
 export class Grafica1Component implements OnInit {
-
+  labels = ["label1", "label2", "label3"]
+  data = [2, 3, 4];
   constructor() { }
 
   ngOnInit(): void { }
