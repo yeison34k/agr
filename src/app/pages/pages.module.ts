@@ -10,6 +10,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { PagesComponent } from './pages.component';
 import { FormsModule } from '@angular/forms';
 import { ComponentModule } from '../component/component.module';
+import { AccountSettingsComponent } from './account-settings/account-settings.component';
 
 
 
@@ -20,7 +21,8 @@ import { ComponentModule } from '../component/component.module';
     Grafica1Component,
     ProgressComponent,
     DashboardComponent,
-    PagesComponent
+    PagesComponent,
+    AccountSettingsComponent
   ],
   exports: [
     Grafica1Component,
