@@ -8,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PagesComponent implements OnInit {
   year = new Date().getFullYear();
+  public selectedThme = document.querySelector('#theme');
+  private themeString = './assets/css/colors/purple-theme.css';
 
-  constructor() { }
-
-  ngOnInit(): void { }
+  ngOnInit(): void { 
+    const url = localStorage.getItem('theme') || this.themeString;
+    this.selectedThme.setAttribute("href", url);
+  }
 
 }
