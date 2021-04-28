@@ -7,7 +7,7 @@ import { MultiDataSet, Label } from 'ng2-charts';
   styles: [
   ]
 })
-export class DonaComponent implements OnInit {
+export class DonaComponent  {
 
 
 
@@ -15,10 +15,4 @@ export class DonaComponent implements OnInit {
   @Input('data') doughnutChartData: MultiDataSet = [
     [350, 450, 100]
   ];
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
 }
