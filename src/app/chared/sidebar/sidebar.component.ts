@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { SidebarService } from '../../services/sidebar.service';
 
 @Component({
@@ -8,7 +8,7 @@ import { SidebarService } from '../../services/sidebar.service';
   ]
 })
 export class SidebarComponent {
-  menuItems: any[];
+  menuItems: unknown[];
   constructor(private sidebarService: SidebarService) { 
     this.menuItems = sidebarService.menu;
   }
